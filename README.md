@@ -1,4 +1,10 @@
+[link-chrome]: https://chrome.google.com/webstore/detail/googlechatgpt/mdonbhpnpdajiekihkjeneenjhmeipam 'Chrome Web Store'
+
+[<img src="https://user-images.githubusercontent.com/3750161/214147732-c75e96a4-48a4-4b64-b407-c2402e899a75.PNG" height="67" alt="Chrome" valign="middle">][link-chrome]
 # GoogleChatGPT
+
+ 
+
 GoogleChatGPT is an innovative and user-friendly chrome extension that combines the power of Google web search with the knowledge of ChatGPT. The extension provides up-to-date information on a variety of topics, making it the perfect tool for anyone seeking quick and accurate information.
 
 Inspired by qunash/chatgpt-advanced, GoogleChatGPT offers a unique and interactive experience, allowing users to engage in a dialogue with the extension to find the information they need. This dialogue format makes it possible for GoogleChatGPT to answer follow-up questions, admit its mistakes, challenge incorrect premises, and reject inappropriate requests.

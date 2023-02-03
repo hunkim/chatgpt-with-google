@@ -15,7 +15,7 @@ So why wait? Try GoogleChatGPT today and experience the power of combined knowle
 
 
 ## Chrome Installation
-  1. Download prebuilt chrome zip file.
+  1. Download prebuilt chrome zip file: `googlechatgpt-current-chrome.zip`
   2. Unzip the file.
   3. Open `chrome://extensions` in Chrome.
   4. Enable developer mode (top right corner).

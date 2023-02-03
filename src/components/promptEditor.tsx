@@ -176,14 +176,6 @@ const PromptEditor = (
 
     const PromptList = (
         <div>
-            <button
-                className="wcg-btn wcg-btn-primary wcg-w-full wcg-text-base"
-                onClick={handleAdd}>
-                <span class="material-symbols-outlined wcg-mr-2">
-                    add_circle
-                </span>
-                {getTranslation(localizationKeys.buttons.newPrompt)}
-            </button>
             <ul className="wcg-menu wcg-p-0 wcg-max-h-96 wcg-scroll-m-0 wcg-scroll-y wcg-overflow-auto wcg-mt-4
                     wcg-flex wcg-flex-col wcg-flex-nowrap
                     wcg-border-solid wcg-border-2 wcg-border-white/20">
@@ -238,7 +230,7 @@ const PromptEditor = (
                         wcg-h-96 wcg-resize-none wcg-text-base wcg-mt-2`}
             value={prompt.text}
             onInput={handleTextareaChange}
-            disabled={prompt.uuid === 'default' || prompt.uuid === 'default_en'}
+            // disabled={prompt.uuid === 'default' || prompt.uuid === 'default_en'}
         />
     )
 

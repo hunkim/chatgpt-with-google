@@ -4,7 +4,7 @@ import { getSystemLanguage } from './localization'
 
 
 const defaultConfig = {
-    numWebResults: 3,
+    numWebResults: 1,
     webAccess: true,
     region: 'wt-wt',
     timePeriod: '',

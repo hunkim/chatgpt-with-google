@@ -84,62 +84,13 @@ function Toolbar() {
     </label>
 
     return (
-        <div className="wcg-toolbar wcg-flex wcg-items-center wcg-gap-2 wcg-mt-0 wcg-p-0 wcg-px-1 wcg-rounded-md">
-
+        <div className="wcg-toolbar wcg-flex wcg-items-center wcg-gap-2 wcg-mt-0 wcg-p-0 wcg-px-1 wcg-rounded-md">            
             <div className="wcg-btn wcg-btn-xs"
                 onClick={() => Browser.runtime.sendMessage("show_options")}
             >
                 {icons.tune}
             </div>
             {webAccessToggle}
-
-            <Dropdown
-                value={numResults}
-                onChange={handleNumResultsChange}
-                options={numResultsOptions} />
-            <Dropdown
-                value={timePeriod}
-                onChange={handleTimePeriodChange}
-                options={timePeriodOptions} />
-            <Dropdown
-                value={region}
-                onChange={handleRegionChange}
-                options={regionOptions} />
-            {/* <Dropdown
-                value={promptUUID}
-                onChange={handlePromptChange}
-                onClick={handlePromptClick}
-                options={prompts.map((prompt) => ({ value: prompt.uuid, label: prompt.name }))} /> */}
-            <div className="wcg-dropdown wcg-dropdown-top"
-                onClick={handlePromptClick}
-            >
-                <div tabIndex={0} className="wcg-flex wcg-items-center wcg-gap-0 wcg-flex-row wcg-cursor-pointer">
-                    <label className="wcg-btn wcg-text-sm wcg-normal-case   wcg-pr-0 wcg-max-w-[7rem] wcg-truncate wcg-justify-start">
-                        {prompts?.find((prompt) => prompt.uuid === promptUUID)?.name || 'Default prompt'}
-                    </label>
-                    {icons.expand}
-                </div>
-                <ul tabIndex={0} className="wcg-dropdown-content wcg-menu wcg-p-0 wcg-m-0 wcg-rounded-md wcg-w-52 wcg-bg-gray-800
-                wcg-max-h-96 wcg-overflow-auto
-                wcg-flex wcg-flex-col wcg-flex-nowrap"
-                >
-                    {prompts.map((prompt) =>
-                        <li tabIndex={0} className="hover:wcg-bg-gray-700 wcg-text-sm wcg-text-white"
-                            onClick={() => handlePromptChange(prompt.uuid)}
-                        >
-                            <a>{prompt.name}</a>
-                        </li>
-                    )
-                    }
-                    <li className="hover:wcg-bg-gray-700 wcg-text-sm wcg-text-white"
-                        onClick={() => Browser.runtime.sendMessage("show_options")
-                        }
-                    >
-                        <a>+ {getTranslation(localizationKeys.buttons.newPrompt)}</a>
-                    </li>
-                </ul>
-            </div>
-
         </div>
     )
 }

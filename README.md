@@ -43,3 +43,6 @@ So why wait? Try GoogleChatGPT today and experience the power of combined knowle
 ## Contributing
 
 Contributions are welcome! Please submit pull requests.
+
+## Credit
+This project is forked from qunash/chatgpt-advanced.

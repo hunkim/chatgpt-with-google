@@ -11,6 +11,12 @@ import path from 'path';
 const buildDir = "build";
 const minify = process.argv.includes("--minify");
 
+async function createBuildDir() {
+  if(!fs.existsSync(buildDir)) {
+    fs.mkdirSync(buildDir);
+  }
+}
+
 async function cleanBuildDir() {
   const entries = await fs.readdir(buildDir);
   for (const entry of entries) {
@@ -101,6 +107,7 @@ async function addFilesToZip(archive, browser) {
 }
 
 async function build() {
+  await createBuildDir();
   await cleanBuildDir();
   await runEsbuild();
 
